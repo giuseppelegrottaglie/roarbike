@@ -1,0 +1,31 @@
+.navbutton{
+    background-color: green;
+    padding: 10px 25px;
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+/* Nasconde il dropdown */
+.dropdown-box{
+    display: none;
+    position: absolute;
+    z-index: 99;
+    padding-top: 20px;
+    margin-left: -25px;
+}
+
+/* Mostra il dropdown */
+.navbutton:hover .dropdown-box{
+    display: block;
+}
+
+.dropdown-box .navbutton{
+    background-color: rgba(0, 128, 0, 0.294);
+}
+
+.dropdown-box .navbutton:hover{
+    background-color: rgba(128, 41, 0, 0.294);
+    transition-duration: 0.1s;
+}
