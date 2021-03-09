@@ -1,260 +1,210 @@
-html{
-    background-image: linear-gradient(#FC5E55,#FA4083);
-}
 
+/*Global View aka Desktop View*/
 body{
-    background-image: url(Images/image-lion-background.png);
-    background-position: top center;
-    background-repeat: no-repeat;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: white;
-    font-size: 1.125rem;
-}
-
-a{
-    color: white;
-    text-decoration: none;
-}
-.container{
-    width: 1024px;
-    min-height: 300px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-header{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 40px;
-    padding-bottom: 20px;
-    align-items: center;
-
-    border-bottom: 1px solid rgba(255, 255, 255, 0.63);
-}
-
-nav {
-    min-width: 200px;
-    /*display: flex;
-    justify-content: space-between;
-    align-items: center;*/
-}
-
-main{
-    margin-top: 50px;
-    min-height: 300px;
-    display: flex;
-    align-items: center;
-
-}
-
-.main2{
-    min-height: 300px;
-    width: 60%;
-    padding-top: 50px;
-}
-
-footer{
-    height: 120px;
-}
-
-.cards{
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    align-items: center;
-}
-
-.card1{
-    background-image: url(images/image-background-card1.jpg);
-    background-size: cover;
-    background-position: bottom;
-    min-height: 250px;
-    width: 30%;
-}
-
-.card2{
-    background-image: url(images/image-background-card2.jpg);
-    background-size: cover;
-    background-position: center;
-    min-height: 250px;
-    width: 30%;
-}
-
-.card3{
-    background-image: url(images/image-background-card3.jpg);
-    background-size: cover;
-    background-position: center;
-    min-height: 250px;
-    width: 30%;
-}
-
-.card1, .card2, .card3 {
-    padding: 30px 30px 20px 30px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.250) ;
-}
-
-.herobox1{
-    flex: 2;
-    padding-right: 100px;
-
-}
-
-.herobox2{
-    flex: 1;
+    background-color: #EBEBEB;
 }
 
 h1{
-    font-size: 3.25rem;
-    font-family: 'Playfair Display', serif;
-    margin-bottom: 1rem;
-    text-shadow: 0px 2x 5px rgba(0, 0, 0, 0.447) ;
+    font-size: 3rem;
 }
 
-p{
-    line-height: 1.75rem;
-    /*margin-bottom: 0.5rem;*/
-}
+.container{
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
 
-.cards h2{
-    font-size: 2rem;
-    font-family: Playfair-Display;
-    margin-top: 20px;
-}
-
-.cards p{
-    font-size: 0.75rem;
-    line-height: 1.2rem;
-    margin-top: 10px;
-}
-
-.cards img{
-    /*padding-top: 18px;*/
-}
-
-.mybutton{
-    background-color: white;
-    color: #FC5E55;
-    font-family: Play-Fair;
-    padding: 10px 25px;
-    /*border-radius: 25px;*/
-
-}
-
-.mybutton:hover{
-    background-color: #fc5d5500;
-    color: white;
-    transition-duration: 1s;
-    border: 1px solid white;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.150) ;
-}
-
-
-a.mybutton{
-    display: inline-block;
-    margin-top: 20px;
-}
-
-.navbutton{
-    font-family: Play-Fair;
-    padding: 10px 25px;
-    border: 1px solid white;
-    display: inline-block;
-}
-
-
-
-.testimonials{
+    /*Necessari per il responsive*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 100px;
-}
-.tbox{
-    margin-top: 70px;
-    width: 47%;
-    padding: 50px;
-    border: 1px solid white;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.152);
-    box-sizing: border-box;
+
+    padding-top: 140px;
 }
 
-/*.tbox :last-child{
-    font-size: .8rem;
-}*/
-
-.tbox p:last-of-type{
-    font-size: 0.8rem;
-    padding-left: 10px;
-}
-
-.dropdown{
-    display: none;
-    position: absolute;
-    margin-top: 15px;
-    z-index: 1;
-    text-align: center;
-}
-
-.navbutton:hover .dropdown{
-    display: block;
-    width: 140px;
-    background-color: white;
-}
-
-.dropdown .navbutton a{
-    background-color: white;
-    color: #FA4083;
-}
-
-.main2 p{
-    margin-bottom: 20px;
-    font-size: 1rem;
-}
-
-.inputwrapper{
-    margin-bottom: 20px;
-}
-
-input[type=text], input[type=email], textarea{
-    padding: 12px 20px;
+.header-container{
+    background-color: rgb(75, 75, 75);
+    min-height: 100px;
+    margin-bottom: 40px;
     width: 100%;
+
+    /*Fissa l'header in alto anche se si scorre*/
+    position: fixed;
+}
+
+header{
+    max-width: 1024px;
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /*centrare gli elementi di un div*/
+    margin: 0 auto 0 auto;
+}
+
+nav{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 0.85rem;
-    border-radius: 10px;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.228);
-    border: none;
-    margin-bottom: 20px;
-    box-sizing: border-box;
 }
 
-.newline{
-    display: block;
-    margin-bottom: 10px;
+.navbutton{
+    text-decoration: none;
+    padding: 10px 25px;
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.205);
+    border: 0.5px solid white;
+    margin-left: 20px;
 }
 
-.margin-right-a{
-    margin-right: 20px;
+a{
+    text-decoration: none;
+    color: white;
 }
 
-input[type=radio]{
-    margin-right: 10px;
-}
-
-form{
-    margin: 40px 0px;
-}
-
-input[type=submit]{
-    border: none;
-    border-radius: 50px;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.228);
+.navbutton:hover{
+    color: black;
+    background-color: white; 
 }
 
 
 
+.logo-desktop{
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 30px;
+}
+
+.logo-mobile{
+    display: none;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 30px;
+}
+
+/*Rende bold una parte di testo grazie a "span"*/
+.bold-font{
+    font-weight: bold;
+}
+
+
+
+.col{
+    background-color: rgb(45, 200, 141);
+    width: 30%;
+    margin-bottom: 40px;
+}
+
+.col p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    padding: 20px 40px;
+    align-items: center;
+    font-size: 0.9rem;
+
+    /*Spaziatura tra le righe*/
+    line-height: 1.2rem;
+}
+
+.col p::first-line{
+    font-weight: bold;
+}
+
+.hide-desktop{
+    display: none;
+}
+
+
+.col img{
+    width: 100%;
+    height: auto;
+}
+
+.mob-wrapper{
+    display: none;
+}
+
+
+
+/*Tablet View*/
+@media (max-width: 768px){
+
+    .col{
+        width: 45%;
+    }
+
+    .hide-desktop{
+        display: block;
+    }
+
+    .header-container{
+        position: relative;
+    }
+
+    nav a{
+        display: block;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .navbutton{
+        margin-left: 0px;
+    }
+
+    .container{
+        padding-top: 10px;
+    }
+
+    /*Permette di attivare il toggle*/
+    .mob-wrapper{
+        display: block;
+        padding-right: 30px;
+        
+    }
+
+    .mobile-nav{
+        display: none;
+        position: absolute;
+        margin-left: -103px;
+        padding-top: 10px;
+    }
+
+    .mob-navbutton{
+        display: block;
+        background-color: white;
+        padding: 15px 30px;
+        color: black;
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+   
+   
+
+}
+
+/*Mobile View*/
+@media (max-width: 400px){
+   
+    .col{
+        width: 100%;
+    }
+
+    .hide-mobile{
+        display: none;
+    }
+
+    .logo-desktop{
+        display: none;
+    }
+
+    .logo-mobile{
+        display: block;
+    }
+
+    .logo-mobile p{
+        line-height: 1.5rem;
+    }
+
+}
 
 
 
