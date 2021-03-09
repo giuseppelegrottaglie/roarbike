@@ -25,7 +25,7 @@ h1{
     background-color: rgb(75, 75, 75);
     min-height: 100px;
     margin-bottom: 40px;
-    width: 100%;
+    max-width: 100%;
 
     /*Fissa l'header in alto anche se si scorre*/
     position: fixed;
